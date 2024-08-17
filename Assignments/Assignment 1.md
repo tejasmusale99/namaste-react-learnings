@@ -65,6 +65,6 @@ So we need 2 separate packages in our app.
 
 3. In Defer HTML Parsing, html parsing goes on, and scripts are fetched in asyn manner i.e. parallely and will start the execution after the completion of the html parsing.
 
-<img src="./images/image1_Assignment1.png" alt="Parsing" />
+<img src="./Images/image1_Assignment1.png" alt="Parsing" />
 
 4. <span style='color:red'>Async attribute dos not guarantee the order of execution of the scripts. But Defer does guarantee. So Defer is Preferable. </span>
