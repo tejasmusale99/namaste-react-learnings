@@ -2959,9 +2959,31 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     id: "element"
 }, "Hello from react");
-console.log(heading);
+console.log(heading); //object
+/* <div id="parent">
+      <div id="child1">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+      </div>
+      <div id="child2">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+      </div>
+  </div> */ const parent = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+    id: "parent"
+}, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+    id: "child1"
+}, [
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "Heading1"),
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "Heading2")
+]), /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+    id: "child2"
+}, [
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "Heading1"),
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "Heading2")
+]));
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(parent);
 
   $parcel$ReactRefreshHelpers$844f.postlude(module);
 } finally {
